@@ -5,3 +5,121 @@
 #heading {
     font-family: 'Raleway';
 }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+/* Split the screen in half */
+.split-left {
+    height: 100%;
+    width: 40%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    left: 0;
+    background-image: url("./images/bg-intro.svg");
+    background-size: 100% 130%;
+  }
+
+  .split-right {
+    height: 100%;
+    width: 60%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    right: 0;
+  }
+  
+
+  /* If you want the content centered horizontally and vertically */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .image-left{
+    width: 100%;
+    border-radius: 100%;
+    text-align: center;
+  }
+  
+  /* Style the image inside the centered container, if needed */
+  .image-right {
+    padding-left: 100px;
+  }
+
+  .icons {
+    position: absolute;
+    right: 0;
+  }
+
+  .fab {
+      padding: 10px 40px 30px 0
+  }
+  .fas {
+    padding: 10px 40px 30px 0
+}
+
+#container {
+    min-height:100%;
+    position:relative;
+}
+
+.text {
+    position: absolute;
+    top: 30%;
+    padding: 50px;
+}
+
+    #footer {
+        position:absolute;
+        bottom:0;
+        width:100%;
+        text-align: right;
+        height:80px;   /* Height of the footer */
+     }
+
+     #footer-text {
+         padding-right: 100px;
+         text-decoration: underline;
+     }
+
+
+     #input{
+        width: 20%;
+        height: 50px;
+        border: 1px solid #ddd;
+        margin: 0px 10px 14px 0px;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+-o-border-radius: 6px;
+-ms-border-radius: 6px;
+border-radius: 6px;
+-moz-box-shadow: 0 3px 5px #ccc;
+-webkit-box-shadow: 0 3px 5px #ccc;
+-o-box-shadow: 0 3px 5px #ccc;
+-ms-box-shadow: 0 3px 5px #ccc;
+box-shadow: 0 3px 5px #ccc;
+     }
+
+     #button{
+        background-color: #4CAF50;
+        border-radius: 4px;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        padding: 14px 40px;
+        font-size: 20px;
+    }
