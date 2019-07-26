@@ -9,14 +9,103 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    margin: 0;
 }
 
 .bold{
     font-weight: 700;
 }
 
-/* Split the screen in half */
-.split-left {
+
+@media only screen and (max-width: 768px) {
+
+  .topbar-desktop {
+    display: none;
+  }
+
+  .top{
+    top: 0;
+    background-image: url("./images/bg-intro.svg");
+    background-size: 100% 100%;
+    padding: 20px;
+
+
+  }
+
+  .bottom{
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 20px
+
+  }
+
+  .split-left{
+    display: none;
+  }
+
+  .split-right{
+    display: none;
+  }
+
+  #input{
+    height: 50px;
+    width: 90%;
+    border: 1px solid #ddd;
+    margin: 0px 10px 14px 0px;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+-o-border-radius: 6px;
+-ms-border-radius: 6px;
+border-radius: 6px;
+-moz-box-shadow: 0 3px 5px #ccc;
+-webkit-box-shadow: 0 3px 5px #ccc;
+-o-box-shadow: 0 3px 5px #ccc;
+-ms-box-shadow: 0 3px 5px #ccc;
+box-shadow: 0 3px 5px #ccc;
+ }
+
+ #footer-small {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  text-align: right;
+  padding-bottom: 10px;
+  padding-left: 50px;
+   /* Height of the footer */
+}
+
+.para {
+  font-size: 14px;
+  color: gray;
+}
+
+.bold {
+  font-size: 14px;
+}
+
+.image-top{
+  width: 80%;
+  height: 80%;
+  display: block;
+  margin: auto;
+}
+
+.image {
+ height: 380px;
+}
+
+.text {
+  position: absolute;
+  top: 30%;
+  padding: 5%;
+}
+
+
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 768px) {
+  .split-left {
     height: 100%;
     width: 40%;
     position: fixed;
@@ -28,7 +117,6 @@ body {
     background-image: url("./images/bg-intro.svg");
     background-size: 100% 130%;
   }
-
   .split-right {
     height: 100%;
     width: 60%;
@@ -39,7 +127,67 @@ body {
     padding-top: 20px;
     right: 0;
   }
+
+  .image-left{
+    width: auto;
+    height: auto;
+  }
   
+  /* Style the image inside the centered container, if needed */
+  .image-right {
+    padding-left: 100px;
+  }
+
+  .topbar-mobile {
+    display: none;
+  }
+
+  .top {
+    display: none;
+  }
+
+  .bottom {
+    display: none;
+  }
+
+  #input{
+    width: 20%;
+    height: 50px;
+    border: 1px solid #ddd;
+    margin: 0px 10px 14px 0px;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+-o-border-radius: 6px;
+-ms-border-radius: 6px;
+border-radius: 6px;
+-moz-box-shadow: 0 3px 5px #ccc;
+-webkit-box-shadow: 0 3px 5px #ccc;
+-o-box-shadow: 0 3px 5px #ccc;
+-ms-box-shadow: 0 3px 5px #ccc;
+box-shadow: 0 3px 5px #ccc;
+ }
+
+ #footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  text-align: right;
+  height:80px;   /* Height of the footer */
+}
+
+.text {
+  position: absolute;
+  top: 30%;
+  padding: 50px;
+}
+
+
+.footer-small {
+  display: none;
+}
+
+
+} 
 
   /* If you want the content centered horizontally and vertically */
 .centered {
@@ -47,17 +195,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  .image-left{
-    width: 100%;
-    border-radius: 100%;
-    text-align: center;
-  }
-  
-  /* Style the image inside the centered container, if needed */
-  .image-right {
-    padding-left: 100px;
   }
 
   .icons {
@@ -77,41 +214,9 @@ body {
     position:relative;
 }
 
-.text {
-    position: absolute;
-    top: 30%;
-    padding: 50px;
-}
-
-    #footer {
-        position:absolute;
-        bottom:0;
-        width:100%;
-        text-align: right;
-        height:80px;   /* Height of the footer */
-     }
-
      #footer-text {
          padding-right: 100px;
          text-decoration: underline;
-     }
-
-
-     #input{
-        width: 20%;
-        height: 50px;
-        border: 1px solid #ddd;
-        margin: 0px 10px 14px 0px;
--moz-border-radius: 6px;
--webkit-border-radius: 6px;
--o-border-radius: 6px;
--ms-border-radius: 6px;
-border-radius: 6px;
--moz-box-shadow: 0 3px 5px #ccc;
--webkit-box-shadow: 0 3px 5px #ccc;
--o-box-shadow: 0 3px 5px #ccc;
--ms-box-shadow: 0 3px 5px #ccc;
-box-shadow: 0 3px 5px #ccc;
      }
 
      #button{
@@ -123,3 +228,6 @@ box-shadow: 0 3px 5px #ccc;
         padding: 14px 40px;
         font-size: 20px;
     }
+
+  
+  
